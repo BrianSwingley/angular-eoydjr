@@ -1,5 +1,10 @@
 export const products = [
   {
+    name: 'Phone Deluxe',
+    price: 899,
+    description: 'A Deluxe phone with one of the best screens'
+  },
+  {
     name: 'Phone XL',
     price: 799,
     description: 'A large phone with one of the best screens'
@@ -12,7 +17,7 @@ export const products = [
   {
     name: 'Phone Standard',
     price: 299,
-    description: ''  /* intentionally blank: 'Standard description' */
+    description: 'standard'  /* intentionally blank: 'Standard description' */
   }
 ];
 

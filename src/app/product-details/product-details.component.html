@@ -1,8 +1,18 @@
 <h2>Product Details</h2>
 
 <div *ngIf="product">
-  <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
-  <p>{{ product.description }}</p>
-
+  <div style="width: 100%; display: table;">
+      <div style="display: table-row">
+          <div style="width: 25%; display: table-cell;"><h2>Name:</h2></div>
+          <div style="display: table-cell;"><h3>{{ product.name }}</h3></div>
+      </div>
+      <div style="display: table-row">
+          <div style="width: 25%; display: table-cell;"><h2>Price:</h2></div>
+          <div style="display: table-cell;"><h3>{{ product.price | currency }}</h3></div>
+      </div>
+          <div style="display: table-row">
+          <div style="width: 25%; display: table-cell;"><h2>Desc:</h2></div>
+          <div style="display: table-cell;"><h3>{{ product.description}}</h3></div>
+      </div>
+  </div>
 </div>
